@@ -16,6 +16,8 @@ USERID=$(id -u)
 check_root() {
     if [ $userID -ne 0 ]; then
         echo -e "$R please run this script with root previleges $N" | tee -a $LOG_FILE
+        exit 1
+    fi
 }
 
 VALIDATE(){
