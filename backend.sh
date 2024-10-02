@@ -67,7 +67,7 @@ npm install &>>$LOG_FILE
 cp /home/ec2-user/Expense-shell/backend.service /etc/systemd/system/backend.service
 
 dnf install mysql -y &>>$LOG_FILE
-VALIDATE $? "Installing MySQL Client"
+VALIDATE $? "Installing the MySQL Client"
 
 mysql -h mysql.daws81s.icu -uroot -pExpenseApp@1 < /app/schema/backend.sql &>>$LOG_FILE
 VALIDATE $? "Schema loading"
