@@ -31,12 +31,7 @@ Client → Nginx (Frontend) → Node.js (Backend) → MySQL (Database)
 
 ---
 
-# Repository Structure
-├── mysql.sh # Database setup script
-├── backend.sh # Backend deployment script
-├── frontend.sh # Frontend & Nginx setup
-├── backend.service # Systemd service file for Node.js app
-├── nginx.conf # Reverse proxy configuration
+
 
 
 ---
